@@ -1,0 +1,10 @@
+function FindProxyForURL(url, host) {
+  alert("Got request for (" + url+ " with host: " + host + ")");
+  if (shExpMatch(myIpAddress(), "192.168.123.*")) {
+    alert("at home");
+    return "PROXY 192.168.123.1:7890";
+  } else {
+    alert("not at home");
+    return "DIRECT";
+  }
+}
