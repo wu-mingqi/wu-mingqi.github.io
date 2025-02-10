@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Orientation Detection</title>
+    <style>
+        video {
+            width: 45%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Face Orientation Detection</h1>
+    <label for="camera1">Select Camera 1:</label>
+    <select id="camera1"></select>
+    <label for="camera2">Select Camera 2:</label>
+    <select id="camera2"></select>
+    <button onclick="startCameras()">Start Cameras</button>
+    <video id="video1" autoplay></video>
+    <video id="video2" autoplay></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <script src="js/smart_camera.js"></script>
+</body>
+</html>
